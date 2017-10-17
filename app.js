@@ -7,7 +7,7 @@ class BookList extends React.Component {
         this.addBook = this.addBook.bind(this);
     }
     addBook(userInput) {
-        if (userInput) {
+        if (userInput.length > 0) {
             BOOKS.push({title: userInput})
         }
         this.userInput.value = "";
