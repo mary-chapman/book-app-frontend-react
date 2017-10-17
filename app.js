@@ -27,7 +27,9 @@ class BookList extends React.Component {
 
                 {BOOKS.map((book, index) => { 
                     return ( 
-                        <BookItem key={index} title={book.title} index={index} updateList={()=> this.forceUpdate() }/>
+                        <div key={index} className="listItem">
+                            <BookItem title={book.title} index={index} updateList={()=> this.forceUpdate() }/>
+                        </div>
                     )
                 })}
             </div>
